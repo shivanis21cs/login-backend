@@ -1,7 +1,9 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
-const PORT = 3000;
+const app = express();
+
+// Use PORT from Render environment, fallback to 3000 for local testing
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -14,28 +16,27 @@ const allowedUsers = [
   { email: "user3@gmail.com", password: "mypwd789" }
 ];
 
+app.get("/", (req, res) => {
+  res.send("✅ Backend is running on Render!");
+});
+
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
 
-  // DEBUG logs (important)
-  console.log("📩 Received from client:");
-  console.log("Email:", `"${email}"`);
-  console.log("Password:", `"${password}"`);
+  console.log("📩 Received:", email, password);
 
   const user = allowedUsers.find(u => u.email === email && u.password === password);
 
   if (user) {
-    console.log(" Match found for:", email);
-    // respond 200 with JSON
+    console.log("✅ Match found for:", email);
     return res.json({ success: true, message: "Login successful!", role: "player" });
   } else {
-    console.log(" Invalid credentials:", email, password);
-    // respond 401 but include JSON body (so client can read message)
+    console.log("❌ Invalid credentials:", email, password);
     return res.status(401).json({ success: false, message: "Invalid email or password" });
   }
 });
 
-// IMPORTANT: bind to 0.0.0.0 so other devices on LAN can reach it
+// Important: Use 0.0.0.0 for external access
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`🚀 Server running on http://localhost:${PORT} (listening on 0.0.0.0)`);
+  console.log(`🚀 Server running on port ${PORT}`);
 });

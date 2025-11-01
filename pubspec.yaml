@@ -1,0 +1,114 @@
+name: demo
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.19.0
+  cloud_firestore: ^4.17.5
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.6.7
+  http: ^1.2.3
+
+
+
+
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/levelplay.png
+    - assets/images/subtitle.png
+    - assets/images/img1.png
+    - assets/images/img2.png
+    - assets/images/img3.png
+    - assets/images/img4.png
+    - assets/images/arrow.png
+    - assets/images/signinimg2.png
+    - assets/images/signinimg3.png
+    - assets/images/signinimg4.png
+    - assets/images/img5.png
+    - assets/images/img6.png
+    - assets/images/img7.png
+    - assets/images/img8.png
+    - assets/images/signup1.png
+    - assets/images/signup2.png
+    - assets/images/greenscreen.png
+    - assets/images/playerbackground.png
+    - assets/images/male.png
+    - assets/images/female.png
+    - assets/images/resetpasswordgreen.png
+    - assets/images/myprofilebackground.png
+    - assets/images/profile.png
+    - assets/images/myprofiledetails.png
+    - assets/images/home.png
+    - assets/images/new.png
+    - assets/images/past.png
+    - assets/images/learn.png
+    - assets/images/notify.png
+    - assets/images/homecontainer.png
+    - assets/images/home1.png
+    - assets/images/homeface.png
+    - assets/images/homebackground.png
+    - assets/images/home.png
+    - assets/images/add.png
+    - assets/images/review.png
+    - assets/images/compare.png
+    - assets/images/addplayerbar.png
+    - assets/images/all1.png
+    - assets/images/all2.png
+    - assets/images/all3.png
+    - assets/images/learncontainer1.png
+    - assets/images/learncontainer2.png
+    - assets/images/learncontainer3.png
+    - assets/images/learngreen.png
+    - assets/images/notifycontainer2.png
+    - assets/images/notifycontainer1.png
+    - assets/images/nameslistcompare.png
+    - assets/images/comparegreen.png
+    - assets/images/newplayer.png
+    - assets/images/newgreen.png
+    - assets/images/connectiongreen.png
+    - assets/images/bluetooth.png
+    - assets/images/ground.png
+    - assets/images/livesessionimg1.png
+    - assets/images/livesessionimg2.png
+    - assets/images/endsessionbutton.png
+    - assets/images/verticalline.png
+    - assets/images/linestraight.png
+    - assets/images/outline.png
+    - assets/images/outline1.png
+    - assets/images/outline2.png
+    - assets/images/newsessionsummary2.png
+    - assets/images/image5.png
+    - assets/images/image4.png
+    - assets/images/image3.png
+    - assets/images/image2.png
+    - assets/images/image1.png
+    - assets/images/outlinebackground.png
+    - assets/images/hello.png
+    - assets/images/help.png
+    - assets/images/ai.png
+    - assets/images/addcomments.png
+    - assets/images/deleteaccount.png
+    - assets/images/editprofile.png
+    - assets/images/resetpassword.png
+    - assets/images/logoutgreen.png
+    - assets/images/line.png
+    - assets/images/lens.png

@@ -10,10 +10,10 @@ app.use(express.json());
 
 // Allowed users — exact values
 const allowedUsers = [
-  { email: "user2@gmail.com", password: "pass234" },
-  { email: "test@gmail.com", password: "12345" },
-  { email: "test@gmail.com", password: "123458" },
-  { email: "user3@gmail.com", password: "mypwd789" }
+  { email: "levelplay@gmail.com", password: "pass234" },
+  { email: "thynkloop@gmail.com", password: "12345" },
+  { email: "raja@gmail.com", password: "123458" },
+  { email: "udhay@gmail.com", password: "mypwd789" }
 ];
 
 app.get("/", (req, res) => {
